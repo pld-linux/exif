@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Graphics
 Source0:	http://dl.sourceforge.net/libexif/%{name}-%{version}.tar.bz2
+# Source0-md5:	55465e6b8194b3a907ae3c3191c6dbe3
 URL:		http://libexif.sourceforge.net/
 BuildRequires:	libexif-devel >= 0.5.9
 BuildRequires:	libmnote-devel >= 0.5.6
