@@ -1,0 +1,30 @@
+--- exif-0.6.9/exif/exif-i18n.c.orig	2004-05-25 23:52:57.000000000 +0200
++++ exif-0.6.9/exif/exif-i18n.c	2005-03-21 19:53:12.354117328 +0100
+@@ -2,6 +2,7 @@
+ #include "exif-i18n.h"
+ 
+ #include <iconv.h>
++#include <langinfo.h>
+ #include <string.h>
+ #include <sys/types.h>
+ 
+@@ -20,7 +21,7 @@
+ 	if (!in) return NULL;
+ 
+ 	memset (buf, 0, sizeof (buf));
+-	if (!tr) tr = iconv_open ("ISO-8859-1", "UTF-8");
++	if (!tr) tr = iconv_open (nl_langinfo(CODESET), "UTF-8");
+ 	iconv (tr, (char **) &in, &t, (char **) &out, &buf_size);
+ 	return buf;
+ }
+--- exif-0.6.9/configure.in.orig	2005-03-21 18:44:16.317890000 +0100
++++ exif-0.6.9/configure.in	2005-03-21 20:00:02.609748992 +0100
+@@ -10,7 +10,7 @@
+ dnl ---------------------------------------------------------------------------
+ dnl i18n support
+ dnl ---------------------------------------------------------------------------
+-AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE",[The gettext domain we're
++AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$PACKAGE",[The gettext domain we're
+ using])
+ ALL_LINGUAS="de es fr pl"
+ AM_GNU_GETTEXT([external])
