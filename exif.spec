@@ -29,13 +29,13 @@ do pokazania mo¿liwo¶ci libexif.
 
 %build
 %configure
-
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
