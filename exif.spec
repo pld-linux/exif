@@ -1,20 +1,18 @@
 Summary:	Utility to show EXIF information hidden in JPEG files
 Summary(pl):	Narzêdzie do wy¶wietlania danych EXIF ukrytych w plikach JPEG
 Name:		exif
-Version:	0.6
-Release:	2
+Version:	0.6.9
+Release:	1
 License:	GPL
 Group:		Applications/Graphics
-Source0:	http://dl.sourceforge.net/libexif/%{name}-%{version}.tar.bz2
-# Source0-md5:	55465e6b8194b3a907ae3c3191c6dbe3
+Source0:	http://dl.sourceforge.net/libexif/%{name}-%{version}.tar.gz
+# Source0-md5:	555029098386fa677c461eb249d852d7
 URL:		http://libexif.sourceforge.net/
 BuildRequires:	automake
-BuildRequires:	libexif-devel >= 0.5.9
-BuildRequires:	libmnote-devel >= 0.5.6
+BuildRequires:	libexif-devel >= 0.6.9
 BuildRequires:	pkgconfig
 BuildRequires:	popt-devel
-Requires:	libexif >= 0.5.9
-Requires:	libmnote >= 0.5.6
+Requires:	libexif >= 0.6.9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
