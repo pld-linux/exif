@@ -9,10 +9,10 @@ Source0:	http://dl.sourceforge.net/libexif/%{name}-%{version}.tar.gz
 # Source0-md5:	555029098386fa677c461eb249d852d7
 URL:		http://libexif.sourceforge.net/
 BuildRequires:	automake
-BuildRequires:	libexif-devel >= 0.6.9
+BuildRequires:	libexif-devel >= 1:0.6.9
 BuildRequires:	pkgconfig
 BuildRequires:	popt-devel
-Requires:	libexif >= 0.6.9
+Requires:	libexif >= 1:0.6.9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
