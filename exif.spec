@@ -12,6 +12,7 @@ BuildRequires:	automake
 BuildRequires:	libexif-devel >= 0.5.9
 BuildRequires:	libmnote-devel >= 0.5.6
 BuildRequires:	popt-devel
+BuildRequires:	pkgconfig
 Requires:	libexif >= 0.5.9
 Requires:	libmnote >= 0.5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
