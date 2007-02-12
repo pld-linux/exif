@@ -1,5 +1,5 @@
 Summary:	Utility to show EXIF information hidden in JPEG files
-Summary(pl):	NarzÍdzie do wy∂wietlania danych EXIF ukrytych w plikach JPEG
+Summary(pl.UTF-8):   Narzƒôdzie do wy≈õwietlania danych EXIF ukrytych w plikach JPEG
 Name:		exif
 Version:	0.6.9
 Release:	2
@@ -24,10 +24,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 'exif' is a small command-line utility to show EXIF information hidden
 in JPEG files, written to demonstrate the power of libexif.
 
-%description -l pl
-exif to ma≥e narzÍdzie dzia≥aj±ce z linii poleceÒ, s≥uø±ce do
-pokazywania informacji EXIF ukrytych w plikach JPEG. Zosta≥o napisane
-do pokazania moøliwo∂ci libexif.
+%description -l pl.UTF-8
+exif to ma≈Çe narzƒôdzie dzia≈ÇajƒÖce z linii polece≈Ñ, s≈Çu≈ºƒÖce do
+pokazywania informacji EXIF ukrytych w plikach JPEG. Zosta≈Ço napisane
+do pokazania mo≈ºliwo≈õci libexif.
 
 %prep
 %setup -q
