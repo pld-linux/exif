@@ -1,5 +1,5 @@
 Summary:	Utility to show EXIF information hidden in JPEG files
-Summary(pl.UTF-8):   Narzędzie do wyświetlania danych EXIF ukrytych w plikach JPEG
+Summary(pl.UTF-8):	Narzędzie do wyświetlania danych EXIF ukrytych w plikach JPEG
 Name:		exif
 Version:	0.6.9
 Release:	2
