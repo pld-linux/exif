@@ -1,0 +1,10 @@
+--- exif-0.6.15/configure.ac.orig	2007-05-23 15:17:43.000000000 +0200
++++ exif-0.6.15/configure.ac	2007-05-26 20:15:20.188668054 +0200
+@@ -42,7 +42,6 @@
+ ALL_LINGUAS="de es fr pl"
+ AM_GNU_GETTEXT_VERSION([0.14.1])
+ AM_GNU_GETTEXT([external])
+-AM_PO_SUBDIRS()
+ AM_ICONV()
+ GP_GETTEXT_FLAGS()
+ 
