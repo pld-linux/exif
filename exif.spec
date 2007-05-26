@@ -11,9 +11,9 @@ Patch0:		%{name}-pl.po-update.patch
 Patch1:		%{name}-nls.patch
 Patch2:		%{name}-ac.patch
 URL:		http://libexif.sourceforge.net/
-BuildRequires:	autoconf >= 2.50
-BuildRequires:	automake
-BuildRequires:	gettext-devel
+BuildRequires:	autoconf >= 2.59
+BuildRequires:	automake >= 1:1.9
+BuildRequires:	gettext-devel >= 0.14.1
 BuildRequires:	libexif-devel >= 1:0.6.15
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
