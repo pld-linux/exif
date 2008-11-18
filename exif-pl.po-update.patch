@@ -1,96 +1,64 @@
---- exif-0.6.15/po/pl.po.orig	2007-05-17 17:23:06.000000000 +0200
-+++ exif-0.6.15/po/pl.po	2007-05-26 20:11:49.692672571 +0200
-@@ -1,13 +1,13 @@
- # Polish translation for exif.
- # This file is distributed under the same license as the exif package.
--# Jakub Bogusz <qboosh@pld-linux.org>, 2005.
-+# Jakub Bogusz <qboosh@pld-linux.org>, 2005-2007.
+--- exif-0.6.17/po/pl.po.orig	2008-11-06 10:03:49.000000000 +0100
++++ exif-0.6.17/po/pl.po	2008-11-18 19:38:33.728634913 +0100
+@@ -4,10 +4,10 @@
  #
  msgid ""
  msgstr ""
--"Project-Id-Version: exif 0.6.9\n"
-+"Project-Id-Version: exif 0.6.15\n"
+-"Project-Id-Version: exif 0.6.16-pre1\n"
++"Project-Id-Version: exif 0.6.17\n"
  "Report-Msgid-Bugs-To: \n"
- "POT-Creation-Date: 2007-05-17 17:23+0200\n"
--"PO-Revision-Date: 2005-03-21 18:01+0100\n"
-+"PO-Revision-Date: 2007-05-26 20:10+0200\n"
+ "POT-Creation-Date: 2008-11-06 01:03-0800\n"
+-"PO-Revision-Date: 2008-01-22 22:14+0100\n"
++"PO-Revision-Date: 2008-11-18 18:28+0100\n"
  "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
  "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
  "MIME-Version: 1.0\n"
-@@ -20,9 +20,9 @@
- msgstr "Znaczniki EXIF w '%s':"
+@@ -24,7 +24,7 @@
+ #: exif/actions.c:74
+ #, c-format
+ msgid "Setting a value for this tag is unsupported!"
+-msgstr ""
++msgstr "Ustawianie wartości tego znacznika nie jest obsługiwane!"
  
- #: exif/actions.c:114
+ #: exif/actions.c:91
+ #, c-format
+@@ -42,9 +42,9 @@
+ msgstr "Jeszcze nie zaimplementowane!"
+ 
+ #: exif/actions.c:150
 -#, fuzzy, c-format
 +#, c-format
- msgid "Unknown MakerNote format.\n"
--msgstr "Nieznany format MakerNote."
-+msgstr "Nieznany format MakerNote.\n"
+ msgid "Warning; Too many components specified!"
+-msgstr "Podano za mało składowych!"
++msgstr "Uwaga: podano za dużo składowych!"
  
- #: exif/actions.c:121
+ #: exif/actions.c:172
  #, c-format
-@@ -41,11 +41,11 @@
+@@ -102,9 +102,9 @@
+ msgstr "IFD '%s' nie zawiera znacznika '%s'."
  
- #: exif/actions.c:135
- msgid "Unknown tag"
--msgstr ""
-+msgstr "Nieznany znacznik"
- 
- #: exif/actions.c:138
- msgid "Unknown value"
--msgstr ""
-+msgstr "Nieznana wartość"
- 
- #: exif/actions.c:163
- #, c-format
-@@ -71,11 +71,9 @@
- msgstr "ThumbnailSize\t%i\n"
- 
- #: exif/main.c:55
+ #: exif/actions.c:323
 -#, fuzzy, c-format
 +#, c-format
- msgid "Internal error. Please contact <%s>.)"
--msgstr ""
--"Błąd wewnętrzny. Proszę skontaktować się z <libexif-devel@lists.sourceforge."
--"net>."
-+msgstr "Błąd wewnętrzny. Proszę skontaktować się z <%s>."
+ msgid "'%s' does not contain tag '%s'."
+-msgstr "IFD '%s' nie zawiera znacznika '%s'."
++msgstr "'%s' nie zawiera znacznika '%s'."
  
- #: exif/main.c:74
+ #: exif/actions.c:341
  #, c-format
-@@ -109,7 +107,7 @@
+@@ -237,7 +237,7 @@
  
- #: exif/main.c:329
- msgid "Display software version"
+ #: exif/main.c:201
+ msgid "Create EXIF data if not existing"
 -msgstr ""
-+msgstr "Wyświetlenie wersji programu"
++msgstr "Utworzenie danych EXIF jeśli nie istnieją"
  
- #: exif/main.c:331
- msgid "Show IDs instead of tag names"
-@@ -173,7 +171,7 @@
- 
- #: exif/main.c:358
- msgid "Output in a XML format"
--msgstr ""
-+msgstr "Wyjście w formacie XML"
- 
- #: exif/main.c:361
- msgid "Show debugging messages"
-@@ -263,18 +261,3 @@
+ #: exif/main.c:203
+ msgid "Output in a machine-readable (tab delimited) format"
+@@ -291,6 +291,3 @@
  #, c-format
- msgid "IFD '%s' does not contain a tag '%s'!"
- msgstr "IFD '%s' nie zawiera znacznika '%s'!"
+ msgid "'%s' does not contain EXIF data!"
+ msgstr "'%s' nie zawiera danych EXIF!"
 -
--#~ msgid "Could not parse JPEG file '%s'."
--#~ msgstr "Nie można przeanalizować pliku JPEG '%s'."
--
--#~ msgid "Could not allocate %i byte(s)."
--#~ msgstr "Nie można przydzielić %i bajtów."
--
--#~ msgid "Help options:"
--#~ msgstr "Opcje pomocy:"
--
--#~ msgid "Show this help message"
--#~ msgstr "Pokazanie tej pomocy"
--
--#~ msgid "Display brief usage message"
--#~ msgstr "Wyświetlenie skróconego sposóbu użycia"
+-#~ msgid "Please specify a tag!"
+-#~ msgstr "Proszę podać znacznik!"
