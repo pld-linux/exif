@@ -1,64 +1,20 @@
---- exif-0.6.17/po/pl.po.orig	2008-11-06 10:03:49.000000000 +0100
-+++ exif-0.6.17/po/pl.po	2008-11-18 19:38:33.728634913 +0100
-@@ -4,10 +4,10 @@
- #
- msgid ""
- msgstr ""
--"Project-Id-Version: exif 0.6.16-pre1\n"
-+"Project-Id-Version: exif 0.6.17\n"
- "Report-Msgid-Bugs-To: \n"
- "POT-Creation-Date: 2008-11-06 01:03-0800\n"
--"PO-Revision-Date: 2008-01-22 22:14+0100\n"
-+"PO-Revision-Date: 2008-11-18 18:28+0100\n"
- "Last-Translator: Jakub Bogusz <qboosh@pld-linux.org>\n"
- "Language-Team: Polish <translation-team-pl@lists.sourceforge.net>\n"
- "MIME-Version: 1.0\n"
-@@ -24,7 +24,7 @@
- #: exif/actions.c:74
- #, c-format
- msgid "Setting a value for this tag is unsupported!"
+--- exif-0.6.19/po/pl.po.orig	2009-11-13 07:18:46.000000000 +0100
++++ exif-0.6.19/po/pl.po	2010-09-25 08:18:40.912562329 +0200
+@@ -73,7 +73,7 @@
+ 
+ #: exif/actions.c:224
+ msgid "Adding entry..."
 -msgstr ""
-+msgstr "Ustawianie wartości tego znacznika nie jest obsługiwane!"
++msgstr "Dodawanie wpisu..."
  
- #: exif/actions.c:91
+ #: exif/actions.c:262
  #, c-format
-@@ -42,9 +42,9 @@
- msgstr "Jeszcze nie zaimplementowane!"
+@@ -234,7 +234,7 @@
  
- #: exif/actions.c:150
--#, fuzzy, c-format
-+#, c-format
- msgid "Warning; Too many components specified!"
--msgstr "Podano za mało składowych!"
-+msgstr "Uwaga: podano za dużo składowych!"
+ #: exif/main.c:222
+ msgid "STRING"
+-msgstr ""
++msgstr "ŁAŃCUCH"
  
- #: exif/actions.c:172
- #, c-format
-@@ -102,9 +102,9 @@
- msgstr "IFD '%s' nie zawiera znacznika '%s'."
- 
- #: exif/actions.c:323
--#, fuzzy, c-format
-+#, c-format
- msgid "'%s' does not contain tag '%s'."
--msgstr "IFD '%s' nie zawiera znacznika '%s'."
-+msgstr "'%s' nie zawiera znacznika '%s'."
- 
- #: exif/actions.c:341
- #, c-format
-@@ -237,7 +237,7 @@
- 
- #: exif/main.c:201
+ #: exif/main.c:224
  msgid "Create EXIF data if not existing"
--msgstr ""
-+msgstr "Utworzenie danych EXIF jeśli nie istnieją"
- 
- #: exif/main.c:203
- msgid "Output in a machine-readable (tab delimited) format"
-@@ -291,6 +291,3 @@
- #, c-format
- msgid "'%s' does not contain EXIF data!"
- msgstr "'%s' nie zawiera danych EXIF!"
--
--#~ msgid "Please specify a tag!"
--#~ msgstr "Proszę podać znacznik!"
