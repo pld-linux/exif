@@ -32,7 +32,7 @@ do pokazania możliwości libexif.
 %setup -q
 %patch0 -p1
 
-rm -f po/stamp-po
+%{__rm} po/stamp-po
 
 %build
 %{__gettextize}
